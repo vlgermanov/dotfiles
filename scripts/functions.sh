@@ -59,7 +59,6 @@ log_failure() {
 }
 
 log_message() {
-    sudo_refresh
     printf "\n"
     printf "${color_blue}✨  %s${color_reset}" "$@"
     printf "\n"
