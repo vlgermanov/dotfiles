@@ -25,9 +25,10 @@ if ! has_command "stow"; then
         brew install stow
         test_command "stow"
     fi
-else
-  log_pending "Setup dotfiles"
-  stow .
 fi
+
+log_pending "Setup dotfiles"
+
+stow .
 
 popd >/dev/null
