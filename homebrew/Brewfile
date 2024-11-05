@@ -1,2 +1,15 @@
+# This file describes the desired state of brew installed apps if using the followimg commands:
+# alias brew-update='brew update; brew bundle check --global || ( brew bundle --global; brew bundle --cleanup --global); brew upgrade; brew cleanup'
+
+# cask_args appdir: '/Applications'
+
+# Taps
 tap "homebrew/bundle"
-brew "stow"
+# Miscellaneous tools
+brew "stow"                     # -- GNU stow - symlink farm manager
+# GitHub tools
+brew 'gh'                       # -- GitHub’s official command line tool
+# Mac App Store cli tools
+brew 'mas'                      # -- Mac App Store command line interface
+# Mac App Store applications
+mas "Windows App", id: 1295203466       # -- Remote desktop
