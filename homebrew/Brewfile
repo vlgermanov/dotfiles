@@ -1,5 +1,5 @@
 # This file describes the desired state of brew installed apps if using the followimg commands:
-# alias brew-update='brew update; brew bundle check --global || ( brew bundle --global; brew bundle --cleanup --global); brew upgrade; brew cleanup'
+# alias brew-update='brew update; brew bundle check --file "$HOME/.config/homebrew/.Brewfile" || ( brew bundle --file "$HOME/.config/homebrew/.Brewfile"; brew bundle --cleanup --file "$HOME/.config/homebrew/.Brewfile"); brew upgrade; brew cleanup'
 
 # cask_args appdir: '/Applications'
 
