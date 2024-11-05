@@ -1,0 +1,4 @@
+--target=~/.config
+--ignore=.stowrc
+--ignore=scripts
+--ignore=DS_Store
