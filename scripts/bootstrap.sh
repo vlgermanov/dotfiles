@@ -8,6 +8,10 @@ source "$(dirname "${BASH_SOURCE[0]}")"/functions.sh
 
 pushd "$(dirname "${BASH_SOURCE[0]}")/../" >/dev/null
 
+modules=(
+    homebrew
+)
+
 # check if $HOME/.config dir exists
 if ! has_path "$HOME/.config"; then
     log_pending "Creating $HOME/.config folder"
@@ -29,6 +33,11 @@ fi
 
 log_pending "Setup dotfiles"
 
-stow .
+for module in "${modules[@]}"; do
+    log_message "stow module: $module"
+    if ! has_path "$module"; then
+        stow "$module"
+    fi
+done
 
 popd >/dev/null
