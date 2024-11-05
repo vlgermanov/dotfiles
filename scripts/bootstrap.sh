@@ -35,9 +35,7 @@ log_pending "Setup dotfiles"
 
 for module in "${modules[@]}"; do
     log_message "stow module: $module"
-    if ! has_path "$module"; then
-        stow "$module"
-    fi
+    stow "$module"
 done
 
 popd >/dev/null
