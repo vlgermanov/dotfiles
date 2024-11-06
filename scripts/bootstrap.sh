@@ -34,7 +34,7 @@ fi
 log_pending "Setup dotfiles"
 
 for module in "${modules[@]}"; do
-    log_message "stow module: $module"
+    log_message "dotfiles module: $module"
     stow "$module"
 done
 
