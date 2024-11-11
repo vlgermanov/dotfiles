@@ -1,16 +1,248 @@
 # This file describes the desired state of brew installed apps if using the followimg commands:
-# alias brew-update='brew update; brew bundle check --file "$HOME/.config/homebrew/.Brewfile" || ( brew bundle --file "$HOME/.config/homebrew/.Brewfile"; brew bundle --cleanup --file "$HOME/.config/homebrew/.Brewfile"); brew upgrade; brew cleanup'
+# alias brew-update='brew update; brew bundle check --file "$HOME/.config/homebrew/Brewfile" || ( brew bundle --file "$HOME/.config/homebrew/Brewfile"; brew bundle --cleanup --file "$HOME/.config/homebrew/Brewfile"); brew upgrade; brew cleanup'
 
-# cask_args appdir: '/Applications'
+#cask_args appdir: '/Applications'
 
 # Taps
-tap "homebrew/bundle"
-# Miscellaneous tools
-brew "stow"                     # -- GNU stow - symlink farm manager
-brew "yazi"                     # -- Terminal file manager
-# GitHub tools
-brew 'gh'                       # -- GitHub’s official command line tool
-# Mac App Store cli tools
-brew 'mas'                      # -- Mac App Store command line interface
+tap 'homebrew/bundle'           # -- Bundler for non-Ruby dependencies from Homebrew, Homebrew Cask, Mac App Store and Whalebrew
+tap 'homebrew/services'         # -- Manage background services with macOS' launchctl daemon manager.
+
+# Shell/Console tools
+#brew 'android-platform-tools'
+#brew 'asciinema'                   # -- Record and share terminal sessions
+brew 'bash'                     	 # -- Install bash version > 4 (MacOS provides version 3)
+brew 'bash-completion@2'
+brew 'bat'
+brew 'binutils'
+#brew 'bpytop'
+#brew 'btop'
+brew 'coreutils'                	 # -- GNU core utilities
+brew 'curl'
+#brew 'dialog'                   	 # -- Script-driven curses widgets (application and library)
+brew 'diffutils'                	 # -- GNU core utilities
+#brew 'direnv'                   	 # -- Load/unload environment variables based on $PWD
+#brew 'duf'
+#brew 'dust'
+brew 'eza'
+#brew 'fastfetch'
+brew 'fd'
+brew 'file-formula'
+brew 'ffmpeg'                   	 # -- Play, record, convert, and stream audio and video
+brew 'findutils'                	 # -- GNU core utilities
+brew 'fzf'                      		 # -- Command-line fuzzy finder written in Go
+brew 'fx'				 # -- Terminal JSON viewer
+brew 'gawk'
+brew 'grep'
+brew 'gnupg'                    	 # -- GNU Pretty Good Privacy (PGP) package
+brew 'gnu-sed'                  	 # -- GNU `sed`
+brew 'gnu-tar'
+brew 'gnutls'
+brew 'gs'
+brew 'htop'
+#brew 'hugo'                     	 # -- Framework for building websites
+brew 'imagemagick'
+brew 'jq'                       		 # -- command-line JSON processor
+#brew 'keychain'                 	 # -- helps you to manage SSH and GPG keys in a convenient and secure manner
+brew 'lazygit'
+brew 'less'
+brew 'mas'                      	    # -- Mac App Store command line interface
+#brew 'miniupnpc'                	 # -- enabling applications to access the services provided by an UPnP "Internet Gateway Device"
+#brew 'moreutils'                	 # -- GNU core utilities
+brew 'mtr'                      	 # -- Improved traceroute
+#brew 'nmap'                     	 # -- Utility for network discovery and security auditing
+brew 'pandoc'			 # -- A universal document converter
+brew 'pinentry-mac'              # -- Pinentry for GPG on Mac
+#brew 'pre-commit'
+brew 'procs'
+brew 'ripgrep'			 # -- A line-oriented search tool that recursively searches your current directory for a regex pattern.
+brew 'rsync'
+#brew 'sd'
+brew 'sevenzip'
+#brew 'p7zip'
+#brew 'pigz'
+#brew 'shellcheck'               	 # -- Static analysis and lint tool, for (ba)sh scripts
+#brew 'shfmt'                    	 # -- Autoformat shell script source code
+brew 'socat'
+brew 'starship'
+brew "stow"			 # -- GNU stow - symlink farm manager
+brew 'telnet'
+brew 'tcptrace'
+brew 'tmux'                     	 # -- Terminal multiplexer
+brew 'tree'                     	 # -- recursive directory listing command
+brew 'unix2dos'               	 # -- Convert text between DOS, UNIX, and Mac formats
+brew 'unzip'
+brew 'watch'                    	 # -- procps
+brew 'wget'                     	 # -- Retrieves content from web servers
+#brew 'xh'
+brew 'xz'
+brew 'yq'                       		 # -- Process YAML documents from the CLI
+brew 'yamllint'                 	 # -- Linter for YAML files
+brew 'yazi'                     	    # -- Terminal file manager
+#brew 'zellij'
+brew 'zoxide'
+#brew 'zsh'
+#brew 'zsh-autosuggestions'
+#brew 'zsh-syntax-highlighting'
+
+#tap 'koekeishiya/formulae'
+#brew 'koekeishiya/formulae/skhd' # hotkey daemon
+
+# Shell/Console editors
+brew 'neovim'
+#brew 'helix'
+#brew 'vim'
+             
+# Git & GitHub tools
+#brew 'git'                    		# -- Distributed revision control system --> Better use macOS git 
+#brew 'git-lfs'
+#brew 'git-secret'               	# -- Prevents you from committing sensitive information to a git repo
+#brew 'pre-commit'                # -- Framework for managing multi-language pre-commit hooks
+brew 'gh'                       	   # -- GitHub’s official command line tool
+#cask 'github'                   	# -- GitHub’s official desktop client
+#brew 'gitversion'               	# -- semantic versioning
+#brew 'git-credential-oauth'   # -- Stores Git credentials
+#brew 'act'                      	# -- Run your GitHub Actions locally
+#brew 'actionlint'               	# -- Static checker for GitHub Actions workflow files
+
+# Terraform
+#brew install hashicorp/tap/terraform
+#brew 'tflint'
+
+# AWS
+#brew 'awscli'
+
+# Containers
+#brew 'docker'                     # -- Docker Desktop (run it to create the link to docker command)
+#brew 'docker-buildx'
+#brew 'docker-compose'
+#brew 'docker-completion'
+#cask 'docker'			# -- Docker Desktop (run it to create the link to docker command)
+#brew 'colima'                     # -- Container runtimes on MacOS (and Linux) with minimal setup
+#brew 'nerdctl'                  # Docker-compatible CLI for containerd
+#brew 'podman'
+#brew 'podman-compose'
+
+# Kubernetes
+brew 'kubie'			# -- Much more powerful alternative to kubectx and kubens
+#install specific version of kubectl
+brew 'kubernetes-cli'                    # -- Kubernetes command-line interface
+brew 'stern'                    # -- Tail multiple Kubernetes pods & their containers
+brew 'krew'                     # -- Package manager for kubectl plugins
+brew 'kustomize'
+brew 'k9s'					# -- provides a terminal UI to interact with your Kubernetes clusters
+brew 'helm'
+# brew 'helmfile'                 # -- Deploy Kubernetes Helm Charts
+# tap 'helm/tap'  
+# brew 'chart-releaser'           # -- Helps Turn GitHub Repositories into Helm Chart Repositories
+
+# GUI Fonts
+cask 'font-jetbrains-mono-nerd-font'
+cask 'font-hack-nerd-font'
+cask 'font-ubuntu-mono-nerd-font'
+
+# GUI Tools
+#cask 'alt-tab'
+#cask 'bruno'
+#cask 'balenaetcher'
+#cask 'calibre'                  # -- E-books management software
+#cask 'devtoys'
+#cask 'flux'                     # -- Adaptive brightness for external displays
+#cask 'hiddenbar'
+#cask 'itsycal'
+#cask 'keepingyouawake'
+#cask 'kindle'
+#cask 'logitech-camera-settings'
+#cask 'logitech-options'
+#cask 'postman'                # -- Collaboration platform for API development
+#cask 'raycast'
+#cask 'rectangle'                   # -- Move and resize windows using keyboard shortcuts or snap areas
+#cask 'raspberry-pi-imager'
+#cask 'shortcat'
+#cask 'stats'
+#cask 'vnc-viewer'
+
+# GUI Editors
+#cask 'qlmarkdown'
+#cask 'obsidian'                 # -- Knowledge base that works on top of a local folder of plain text Markdown files
+#cask 'sublime-text'
+#cask 'visual-studio-code'       # -- Open-source code editor
+#cask 'zettlr'   # -- Open-source markdown editor
+
+# GUI Terminals
+#cask 'alacritty'                # -- Cross-platform, GPU-accelerated terminal emulator
+#cask 'iterm2'
+#cask 'kitty'                    # -- GPU-based terminal emulator
+#cask 'wezterm'
+
+# GUI Browsers
+#cask 'google-chrome'              # -- Google Web Browser
+#brew 'chrome-cli'
+#cask 'firefox'                  # -- Web Browser Mozilla Firefox
+#cask 'brave-browser'
+#cask 'arc'
+
+# Screenshots & Screenrecording
+#cask 'flameshot'
+#cask 'obs'
+
+# Messangers & Chat
+#cask 'discord'
+#cask 'messenger'
+#cask 'slack'
+#cask 'signal'
+#cask 'telegram'
+#cask 'whatsapp'
+#cask 'zoom'
+
+# GUI Multimedia
+#cask 'handbrake'
+#cask 'spotify'
+cask 'vlc'
+
+# Ansible
+#brew 'ansible'
+
+# Development
+#brew 'ack'
+#brew 'automake'
+#brew 'cmake'
+#brew 'cmatrix'
+#brew 'gcc'
+#brew 'the_silver_searcher'
+brew 'make'
+
+# Nodejs
+#brew 'node@18'
+#brew install node
+#brew install nvm
+#brew install n
+#brew install yarn
+#brew install pnpm
+
+# Python
+#cask 'anaconda'
+#brew 'pv'
+#brew 'pyenv'
+#brew 'python@3.11'
+
+# Java
+#cask 'temurin@17'
+#cask 'temurin@21'
+#brew 'openjdk@21'
+
 # Mac App Store applications
 mas "Windows App", id: 1295203466       # -- Remote desktop
+#mas "Amazon Kindle", id: 302584613
+#mas "NordVPN: VPN Fast & Secure", id: 905953485
+
+# VSCode Extensions
+#vscode 'ms-python.isort'
+#vscode 'ms-python.python'
+#vscode 'ms-python.vscode-pylance'
+#vscode 'ms-vscode-remote.remote-ssh'
+#vscode 'ms-vscode-remote.remote-ssh-edit'
+#vscode 'ms-vscode.remote-explorer'
+#vscode 'redhat.vscode-yaml'
+#vscode 'samuelcolvin.jinjahtml'
+#vscode 'tamasfe.even-better-toml'
+
