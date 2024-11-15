@@ -232,6 +232,7 @@ brew 'make'
 
 # Mac App Store applications
 mas "Windows App", id: 1295203466       # -- Remote desktop
+mas "Strongbox - Password Manager", id: 897283731	# -- Keepass
 #mas "Amazon Kindle", id: 302584613
 #mas "NordVPN: VPN Fast & Secure", id: 905953485
 
