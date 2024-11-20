@@ -37,6 +37,7 @@ brew 'gnupg'                    	 # -- GNU Pretty Good Privacy (PGP) package
 brew 'gnu-sed'                  	 # -- GNU `sed`
 brew 'gnu-tar'
 brew 'gnutls'
+brew 'govc'
 brew 'gs'
 brew 'htop'
 #brew 'hugo'                     	 # -- Framework for building websites
