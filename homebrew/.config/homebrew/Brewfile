@@ -127,6 +127,7 @@ brew 'gh'                       	   # -- GitHub’s official command line tool
 brew 'kubie'			# -- Much more powerful alternative to kubectx and kubens
 #install specific version of kubectl
 brew 'kubernetes-cli'                    # -- Kubernetes command-line interface
+brew 'kubeseal'			# -- Sealed-secrets command-line interface
 brew 'stern'                    # -- Tail multiple Kubernetes pods & their containers
 brew 'krew'                     # -- Package manager for kubectl plugins
 brew 'kustomize'
@@ -168,6 +169,7 @@ cask 'font-ubuntu-mono-nerd-font'
 #cask 'sublime-text'
 #cask 'visual-studio-code'       # -- Open-source code editor
 #cask 'zettlr'   # -- Open-source markdown editor
+cask 'zed'			 # -- Open-source code editor based on rust
 
 # GUI Terminals
 #cask 'alacritty'                # -- Cross-platform, GPU-accelerated terminal emulator
