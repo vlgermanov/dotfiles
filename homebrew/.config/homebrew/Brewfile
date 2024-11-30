@@ -150,13 +150,15 @@ cask 'font-ubuntu-mono-nerd-font'
 #cask 'devtoys'
 #cask 'flux'                     # -- Adaptive brightness for external displays
 #cask 'hiddenbar'
+cask 'hyperkey'
 #cask 'itsycal'
+#cask 'karabiner-elements'
 #cask 'keepingyouawake'
 #cask 'kindle'
 #cask 'logitech-camera-settings'
 #cask 'logitech-options'
 #cask 'postman'                # -- Collaboration platform for API development
-#cask 'raycast'
+cask 'raycast'
 #cask 'rectangle'                   # -- Move and resize windows using keyboard shortcuts or snap areas
 #cask 'raspberry-pi-imager'
 #cask 'shortcat'
