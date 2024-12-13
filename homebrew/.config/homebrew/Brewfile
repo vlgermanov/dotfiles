@@ -164,6 +164,7 @@ cask 'raycast'
 #cask 'shortcat'
 #cask 'stats'
 #cask 'vnc-viewer'
+cask 'winbox'
 
 # GUI Editors
 #cask 'qlmarkdown'
