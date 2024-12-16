@@ -147,7 +147,6 @@ cask 'font-ubuntu-mono-nerd-font'
 #cask 'bruno'
 #cask 'balenaetcher'
 #cask 'calibre'                  # -- E-books management software
-cask 'chatgpt'
 #cask 'devtoys'
 #cask 'flux'                     # -- Adaptive brightness for external displays
 #cask 'hiddenbar'
