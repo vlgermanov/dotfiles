@@ -150,6 +150,7 @@ cask 'font-ubuntu-mono-nerd-font'
 #cask 'devtoys'
 #cask 'flux'                     # -- Adaptive brightness for external displays
 #cask 'hiddenbar'
+cask 'homerow'
 cask 'hyperkey'
 #cask 'itsycal'
 #cask 'karabiner-elements'
@@ -163,7 +164,8 @@ cask 'raycast'
 #cask 'raspberry-pi-imager'
 #cask 'shortcat'
 #cask 'stats'
-#cask 'vnc-viewer'
+cask 'tailscale'
+cask 'vnc-viewer'
 cask 'winbox'
 
 # GUI Editors
